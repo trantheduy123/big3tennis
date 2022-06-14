@@ -1,0 +1,42 @@
+
+
+
+
+/* Mobile */
+@media (max-width:739px){
+  .hide-on-mobile{
+      display: none;
+  }
+  .column {
+    width: 50%;
+}
+
+  .display-block-on-mobile{
+    text-align: start;
+    justify-content: center;
+  }
+
+  .visual-mobile {
+  
+    display: flex;
+     align-content: end;
+      flex-direction: column;
+       flex-wrap: nowrap; 
+       height: 320px;
+  }
+  .nav-item-mobile {
+    padding: 0px;
+
+}
+
+.BIOGRAPHY-mobile{
+  background-color: #fff;
+  display: block;
+  margin-left: 60px;
+  margin-top: 25px;
+}
+
+.story_big3_content-mobile{
+  margin: 0 30px 0 30px;
+}
+}

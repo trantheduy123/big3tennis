@@ -5,84 +5,170 @@
     --primary-color:#3ef83e
 }
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
-figure.snip1440 {
-  font-family: 'Montserrat', Arial, sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+figure.snip0016 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
   position: relative;
   overflow: hidden;
-  margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
-  color: #ffffff;
-  font-weight: 700;
+  margin-top: 30px;
+  min-width: 220px;
+  max-height: 220px;
+  background: #000000;
   text-align: left;
-  text-transform: uppercase;
-  line-height: 1.4em;
-  background-color: #000000;
 }
-figure.snip1440 * {
-  -webkit-box-sizing: padding-box;
-  box-sizing: padding-box;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+figure.snip0016 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-figure.snip1440 img {
+figure.snip0016 img {
   max-width: 100%;
-  vertical-align: top;
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
 }
-figure.snip1440 figcaption {
-  top: 20px;
-  left: 20px;
-  padding: 10px 15px;
+figure.snip0016 figcaption {
   position: absolute;
-  opacity: 0;
-  z-index: 1;
-  -webkit-transform: translateX(10%);
-  transform: translateX(10%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-figure.snip1440 h3 {
-  letter-spacing: -1px;
-  margin: 0;
-  font-weight: 600;
-}
-figure.snip1440:after {
-  border: 8px solid #ffffff;
+figure.snip0016 figcaption::before {
   position: absolute;
-  content: "";
-  display: block;
-  top: 50%;
-  bottom: 50%;
-  left: 20px;
-  right: 20px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 100%;
+  border-left: 4px solid rgba(255, 255, 255, 0.8);
+  content: '';
   opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+ 
 }
-figure.snip1440 a {
+figure.snip0016 h2,
+figure.snip0016 p {
+  
+  margin-left: 40px;
+  margin-top: 40px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+figure.snip0016 h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(30%, 0%, 0);
+  transform: translate3d(30%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.snip0016 h2 span {
+  font-weight: 800;
+}
+figure.snip0016 p {
+  font-weight: 200;
+  -webkit-transform: translate3d(0%, 30%, 0);
+  transform: translate3d(0%, 30%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.snip0016 a {
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   position: absolute;
-  z-index: 1;
+  color: #ffffff;
 }
-figure.snip1440:hover img,
-figure.snip1440.hover img {
-  opacity: 0.2;
+figure.snip0016:hover img {
+  opacity: 0.3;
 }
-figure.snip1440:hover figcaption,
-figure.snip1440.hover figcaption {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);
+figure.snip0016:hover figcaption h2 {
   opacity: 1;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
-figure.snip1440:hover:after,
-figure.snip1440.hover:after {
-  top: 20px;
-  bottom: 20px;
+figure.snip0016:hover figcaption p {
   opacity: 0.9;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  
 }
+figure.snip0016:hover figcaption::before {
+  background: rgba(255, 255, 255, 0);
+  left: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.snip1135 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.snip1135 * {
+  box-sizing: border-box;
+}
+.snip1135 li {
+  display: inline-block;
+  list-style: outside none none;
+  padding: 0;
+}
+.snip1135 a {
+  padding: 0.5em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.snip1135 a:before,
+.snip1135 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1135 a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #fdfdfd;
+}
+.snip1135 a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.snip1135 a:hover:before,
+.snip1135 .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.snip1135 a:hover:after,
+.snip1135 .current a:after {
+  max-width: 100%;
+}
+
 
